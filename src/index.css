@@ -1,0 +1,126 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  background-color: #191919;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+.gap-10 {
+  gap: 10px;
+}
+
+header {
+  background-color: black;
+  height: 70px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  position: sticky;
+  top: 0px;
+  z-index: 9999999;
+}
+header > input {
+  width: 30%;
+  height: 40px;
+  padding: 10px;
+}
+header > input:focus {
+  outline: none;
+}
+header > input::placeholder {
+  color: lightgray;
+}
+@media only screen and (max-width: 768px) {
+  header > input {
+    display: none;
+  }
+}
+#icon {
+  position: relative;
+}
+#counter {
+  position: absolute;
+  background-color: #12daa8;
+  color: white;
+  border-radius: 50%;
+  padding: 5px;
+  font-size: 0.75rem;
+  top: -10px;
+  right: -10px;
+}
+.grid-container {
+  display: grid;
+  gap: 30px;
+  margin: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+.grid-container > img {
+  width: 80%;
+}
+
+.grid-img-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  height: 400px;
+}
+.card-item {
+  width: 100%;
+
+  padding: 10px;
+}
+.cartMain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.cart {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 70%;
+  align-items: center;
+  justify-content: center;
+}
+.cardItem {
+  /* height: ; */
+  background-color: white;
+  display: grid;
+  grid-template-columns: 300px 1fr 1fr;
+  gap: 1.2rem;
+  padding: 10px;
+}
+.cardItem > img {
+  width: 100%;
+  height: 300px;
+}
+.cartMain {
+  background-color: #f9f9f9;
+  height: 100vh;
+}
+
+.cardBtnHolder > button {
+  background-color: white;
+  padding: 10px;
+  border-radius: 0.75rem;
+}
+.cardBtnHolder > button:hover {
+  /* outline: 1px solid #12daa8; */
+  border: 1px solid #12daa8;
+}
+.cardBtnHolder {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
